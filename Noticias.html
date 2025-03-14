@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Noticias - Bosteros Unidos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Header -->
@@ -23,10 +24,37 @@
       </ul>
     </nav>
   </header>
-
+<!-- bootstrap -->
+<div class="container mt-4">
+  <div class="row">
+      <div class="col-md-8">
+          <h2 class="mi-titulo">Últimas Noticias</h2>
+          <div class="card mb-3">
+              <img src="./imagenes/fichaje.jpeg" class="card img-fluid w-60 img-top w-50"alt="Noticia 1">
+         
+              <div class="card-body">
+                  <h5 class="card-title">Nuevo Fichaje Estrella</h5>
+                  <p class="card-text">Boca Juniors anuncia la contratación de un nuevo jugador estrella...</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+          </div>
+          <div class="card mb-3">
+              <img src="./imagenes/Fixture-Boca-Juniors.webp" class="card img-fluid w-60 img-top w-50" alt="Noticia 2">
+              <div class="card-body">
+                  <h5 class="card-title">Próximo Partido Importante</h5>
+                  <p class="card-text">Entérate de todos los detalles del próximo partido de Boca Juniors...</p>
+                  <a href="#" class="btn btn-primary">Leer más</a>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <img src="imagenes/Banner-Nosotros-Xeneizes.png" alt="Banner de Bosteros Unidos" class="img-fluid rounded">
+      </div>
+  </div>
+</div>
   <!-- Contenido Principal -->
   <main>
-    <h2>Últimas Noticias de Bosteros Unidos</h2>
+    <h2>Noticias de Bosteros Unidos</h2>
 
     <!-- Noticia 1 -->
     <article>
@@ -55,6 +83,8 @@
       <p><strong>Resumen breve de la noticia 3.</strong> Aquí puedes incluir un pequeño párrafo descriptivo.</p>
       <a href="#">Leer más</a>
     </article>
+
+  
   </main>
 
   <!-- Paginación -->
@@ -70,15 +100,16 @@
   </section>
 
   <!-- Footer -->
-  <footer>
+  <footer class="mi-footer">
     <p>Contacto: info@bosterosunidos.com | Tel: 11-6443-3036</p>
     <p>
-      Síguenos: 
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">Twitter</a>
+        Síguenos:
+        <a href="#" class="text-warning">Facebook</a> |
+        <a href="#" class="text-warning">Instagram</a> |
+        <a href="#" class="text-warning">Twitter</a>
     </p>
     <p>© 2025 Bosteros Unidos. Todos los derechos reservados.</p>
-  </footer>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
