@@ -120,106 +120,6 @@ nav ul li.active a {
 /* main */
 /* footer */
 /* nav */
-/* ===== Navegación 3D ===== */
-nav {
-  background-color: transparent;
-  padding: 1rem 0;
-  perspective: 1000px; /* Define la perspectiva 3D */
-  /* Versión móvil */
-}
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  transform-style: preserve-3d; /* Mantiene el contexto 3D */
-}
-nav ul li {
-  margin: 0;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.3s ease;
-  /* Efecto 3D base */
-  /* Indicador de página activa 3D */
-}
-nav ul li::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgb(3.3, 52.8, 95.7);
-  border-radius: 10px;
-  transform: translateZ(-10px); /* Profundidad 3D */
-  transition: all 0.3s ease;
-}
-nav ul li a {
-  position: relative;
-  color: #fff;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: bold;
-  font-size: 1.2rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 10px;
-  display: block;
-  background: #055091;
-  transform: translateZ(0);
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Efecto hover 3D */
-  /* Efecto click 3D */
-}
-nav ul li a:hover {
-  background: #f1c71e;
-  color: #000;
-  transform: translateZ(15px) rotateX(15deg);
-}
-nav ul li a:hover::before {
-  transform: translateZ(-15px);
-}
-nav ul li a:active {
-  transform: translateZ(5px);
-  background: rgb(183.1066945607, 148.9267782427, 11.3933054393);
-}
-nav ul li.active a {
-  background: #055091;
-  color: #fff;
-  transform: translateZ(10px);
-}
-nav ul li.active a::before {
-  background: rgb(6.7, 107.2, 194.3);
-  transform: translateZ(-5px);
-}
-@media (max-width: 768px) {
-  nav {
-    perspective: none;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  nav ul li {
-    width: 100%;
-  }
-  nav ul li::before {
-    display: none; /* Desactiva 3D en móvil */
-  }
-  nav ul li a {
-    transform: none !important;
-  }
-}
-
-/* header */
-/* azul boca */
-/* amarillo boca */
-/* body */
-/* articulos */
-/* main */
-/* footer */
-/* nav */
 /* ===== Estilos para Artículos ===== */
 article {
   background-color: #3847f1;
@@ -316,7 +216,7 @@ table tr:hover {
 /* /Estilos para el encabezado/
  */
 h3 {
-  color: #f1c71e;
+  color: #055091;
 }
 
 .header, header {
@@ -355,6 +255,46 @@ h3 {
 .header nav ul li a:hover, header nav ul li a:hover {
   background-color: #f1c71e;
   color: #000;
+}
+
+/* 3d */
+.card-3d {
+  position: relative;
+  transform-style: preserve-3d;
+  perspective: 1200px;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+  background: linear-gradient(135deg, #055091 0%, rgb(2.45, 39.2, 71.05) 100%);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.card-3d::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.2) 0%, rgba(5, 80, 145, 0.7) 50%, rgba(241, 199, 30, 0.3) 100%);
+  transform: translateZ(10px);
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+  z-index: -1;
+}
+.card-3d:hover {
+  transform: translateZ(25px) rotateX(15deg) rotateY(5deg);
+}
+.card-3d:hover::before {
+  transform: translateZ(5px);
+}
+.card-3d:hover .card-content {
+  background: linear-gradient(45deg, #f1c71e 0%, rgb(243.9874476987, 210.949790795, 78.0125523013) 100%);
+}
+
+.card-content {
+  padding: 2rem;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+  transform: translateZ(20px);
+  backdrop-filter: blur(5px);
 }
 
 /* header */

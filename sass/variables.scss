@@ -39,3 +39,22 @@ $nav-transition: $transition;
 $nav-gap: 2rem;
 $nav-font-size: 1.2rem;
 $nav-font-weight: bold;
+
+// Ejes 3D
+$perspective: 1200px;
+$depth-base: 10px;
+$depth-hover: 25px;
+$rotate-x: 15deg;
+$rotate-y: 5deg;
+
+// Gradientes
+$gradient-primary: linear-gradient(135deg, $color-primary 0%, darken($color-primary, 15%) 100%);
+$gradient-secondary: linear-gradient(45deg, $color-secondary 0%, lighten($color-secondary, 10%) 100%);
+$gradient-3d: linear-gradient(145deg, 
+              rgba($color-white, 0.2) 0%, 
+              rgba($color-primary, 0.7) 50%, 
+              rgba($color-secondary, 0.3) 100%);
+
+// Tiempos
+$transition-3d: all 0.5s cubic-bezier(0.17, 0.67, 0.21, 0.99);
+$shadow-3d: 0 10px 25px rgba(0, 0, 0, 0.2);
