@@ -1,0 +1,11 @@
+@forward 'variables';
+
+// Estilos generales para el body
+body {
+    font-family: $font-roboto;
+    margin: 0;
+    padding: 0;
+    background-color: $color-background;
+    color: $color-text;
+    line-height: 1.6;
+  }

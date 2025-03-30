@@ -1,0 +1,52 @@
+@forward 'variables';
+
+// Estilos para el banner
+.banner {
+    grid-area: banner; // Define la ubicación en el grid
+  
+    img {
+      width: 100%; // Ocupa el 100% del ancho del contenedor
+      height: auto; // Altura automática para mantener la proporción
+      display: block; // Elimina el espacio extra debajo de la imagen
+      border-radius: 10px; // Bordes redondeados
+    }
+  }
+  
+  // Estilos para el contenido principal
+  .main {
+    grid-area: main; // Define la ubicación en el grid
+    background-color: $color-white; // Fondo blanco
+    padding: 20px; // Espaciado interno
+    max-width: 1200px; // Ancho máximo del contenido
+    margin: 0 auto; // Centra el contenido en la página
+    border-radius: 10px; // Bordes redondeados
+    box-shadow: 0 2px 5px $color-box-shadow; // Sombra suave
+  }
+  
+  // Estilos para los títulos
+  h1, h2, h3 {
+    font-family: $font-bebas-neue; // Usa Bebas Neue para los títulos
+    margin-top: 0; // Elimina el margen superior predeterminado
+    margin-bottom: 15px; // Margen inferior
+  }
+  
+  h2 {
+    font-size: 2em; // Tamaño de fuente del h2
+    border-bottom: 2px solid $color-border-bottom; // Borde inferior amarillo
+    padding-bottom: 10px; // Espaciado inferior
+  }
+
+    /* Grid Container */
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header"
+          "banner"
+          "main"
+          "footer";
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      

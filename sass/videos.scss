@@ -1,0 +1,17 @@
+
+// Contenedor del video centrado
+.video-recibimientos {
+    position: relative; // Establece el contenedor como punto de referencia para posicionamiento absoluto.
+    width: 100%; // Establece el ancho del contenedor al 30% del contenedor padre.
+    padding-bottom: 56.25%; // Crea un espacio vertical basado en el ancho, manteniendo la relación de aspecto 16:9.
+    height: 10px; // Establece la altura del contenedor.
+    overflow: hidden; // Recorta cualquier contenido que se salga del contenedor.
+  
+    iframe {
+      position: absolute; // Posiciona el iframe dentro del contenedor.
+      top: 0; // Alinea el iframe a la parte superior del contenedor.
+      left: 0; // Alinea el iframe a la izquierda del contenedor.
+      width: 100%; // Hace que el iframe ocupe todo el ancho del contenedor.
+      height: 100%; // Hace que el iframe ocupe toda la altura del contenedor.
+    }
+  }

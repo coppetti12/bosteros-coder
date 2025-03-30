@@ -1,0 +1,28 @@
+@mixin mobile-styles {
+    @media (max-width: 768px) {
+      @content; // Coloca el contenido anidado aquí
+    }
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "banner"
+      "main"
+      "footer";
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    @include mobile-styles {
+      grid-template-areas:
+        "header"
+        "banner"
+        "main"
+        "footer";
+      gap: 10px;
+      padding: 10px;
+    }
+  }
