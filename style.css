@@ -315,16 +315,25 @@ table tr:hover {
 /* nav */
 /* /Estilos para el encabezado/
  */
+h3 {
+  color: #f1c71e;
+}
+
 .header, header {
   grid-area: header;
   background-color: rgb(66, 144, 218);
-  color: #fff;
   padding: 20px;
   border-bottom: 5px solid;
   display: flex;
   flex-direction: column;
+  color: #fff;
   align-items: center;
   text-align: center;
+}
+.header h1, header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-family: "Bebas Neue", sans-serif;
 }
 .header nav ul, header nav ul {
   list-style: none;
@@ -346,15 +355,6 @@ table tr:hover {
 .header nav ul li a:hover, header nav ul li a:hover {
   background-color: #f1c71e;
   color: #000;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-  font-family: "Bebas Neue", sans-serif;
-}
-header h1 h3 {
-  color: #f1c71e;
 }
 
 /* header */
