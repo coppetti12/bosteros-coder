@@ -1,11 +1,21 @@
-@forward 'variables';
+@import 'variables';
 
 // Estilos generales para el body
 body {
     font-family: $font-roboto;
     margin: 0;
     padding: 0;
-    background-color: $color-background;
+    background-color: $color-secondary;
     color: $color-text;
     line-height: 1.6;
   }
+
+   /* Barra de Búsqueda */
+   .search-bar input {
+    padding: 10px; /* Espaciado interno */
+    width: 300px; /* Ancho del input */
+    border: 2px solid #ffcd00; /* Borde amarillo */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1em; /* Tamaño de fuente */
+  }
+  

@@ -1,13 +1,20 @@
 /* header */
-$color-primary: #005baa; /* azul boca */
-$color-secondary: #ffcd00; /* amarillo boca */
+$color-primary: #055091; /* azul boca */
+$color-secondary: #f1c71e; /* amarillo boca */
 $color-white: #fff;
 $color-text: #000;
 
 /* body */
-$color-background: #e7f84bd0;
-$color-text: #333;
+$color-background: #e1f059d0;
 $font-roboto: 'Roboto', sans-serif;
+
+/* articulos */
+$color-bg-article: #3847f1;               // Fondo del artículo
+$color-shadow: rgba(0, 0, 0, 0.1);     // Sombra base
+$color-shadow-hover: rgba(0, 0, 0, 0.2); // Sombra hover
+$color-primary-hover: #e6b800;         // Amarillo oscuro (hover)
+$border-radius: 10px;                  // Radio de bordes
+$transition: 0.3s ease;                // Transición suave
 
 /* main */
 $color-box-shadow: rgba(0, 0, 0, 0.1);
@@ -20,3 +27,15 @@ $color-footer-text: #fff;
 $color-footer-border: #ffcd00;
 $color-footer-link: #ffcd00;
 $color-footer-link-hover: #e6b800;
+
+/* nav */
+$nav-bg-color: transparent;
+$nav-link-color: $color-white;
+$nav-link-hover-bg: $color-secondary;
+$nav-link-hover-color: $color-text;
+$nav-link-padding: 0.8rem 1.5rem;
+$nav-link-radius: $border-radius;
+$nav-transition: $transition;
+$nav-gap: 2rem;
+$nav-font-size: 1.2rem;
+$nav-font-weight: bold;

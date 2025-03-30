@@ -1,21 +1,15 @@
-@forward 'variables';
+@import 'variables';
 
 // Estilos para el footer
 .footer, footer {
   grid-area: footer; // Define la ubicación en el grid
-  background-color: $color-footer-bg; /* // Fondo oscuro */
   color: $color-footer-text; // Texto blanco
+  background-color: $color-footer-bg; /* // Fondo oscuro */
   text-align: center; // Centra el contenido
   padding: 20px; // Espaciado interno
   margin-top: 40px; // Margen superior
   border-top: 5px solid $color-footer-border; // Borde superior amarillo
-
-  // Estilos para mobile
-  @media (max-width: 768px) {
-    padding: 15px; // Espaciado interno reducido para mobile
-  }
 }
-
 // Estilos para los enlaces del footer
 footer a {
   color: $color-footer-link; // Color amarillo para los enlaces

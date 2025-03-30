@@ -1,0 +1,43 @@
+ @import 'variables';
+
+ /* ===== Estilos para Artículos ===== */
+article {
+    background-color: $color-bg-article;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 5px $color-shadow;
+    transition: transform $transition, box-shadow $transition;
+  
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px $color-shadow-hover;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: $border-radius;
+    }
+  
+    p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+  
+    a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: $color-primary;
+      color: #000;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color $transition;
+  
+      &:hover {
+        background-color: $color-primary-hover;
+      }
+    }
+  }

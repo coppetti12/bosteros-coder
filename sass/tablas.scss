@@ -1,0 +1,29 @@
+@import'variables';
+  
+  /* ===== Estilos para Tablas ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: $color-white; // Usa variable #fff
+    border-radius: $border-radius; // 10px de variables existentes
+    overflow: hidden;
+    box-shadow: $color-shadow; // rgba(0, 0, 0, 0.1)
+  
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid darken($color-background, 30%); // Deriva del color de fondo
+    }
+  
+    th {
+      background-color: $color-primary; // Azul Boca (#005baa)
+      color: $color-white; // Texto blanco
+      font-weight: $nav-font-weight; // Reutiliza variable bold del nav
+    }
+  
+    tr:hover {
+      background-color: lighten($color-background, 10%); // Tono más claro del fondo
+      transition: background-color $transition; // 0.3s ease
+    }
+  }
